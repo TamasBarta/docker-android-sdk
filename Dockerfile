@@ -20,7 +20,7 @@ ENV PATH ${ANDROID_HOME}/tools:$ANDROID_HOME/platform-tools:$PATH
 
 # Install Android SDK components
 
-ENV ANDROID_COMPONENTS "platform-tools build-tools;27.0.1 platforms;android-27"
+ENV ANDROID_COMPONENTS "platform-tools build-tools;30.0.3 platforms;android-30"
 
 RUN for component in ${ANDROID_COMPONENTS}; do echo y | /usr/local/android-sdk-linux/tools/bin/sdkmanager "${component}"; done
 
